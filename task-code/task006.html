@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>页面制作期末考2</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+	.div1 p{
+		font-family: 'Microsoft Yahei';font-size: 14px;font-weight: bold;line-height: 16px;margin-bottom: 15px;
+	}
+	.usern,.userp{
+		font-family: '宋体';font-size: 12px;vertical-align: middle;display:inline-block;width: 60px;
+	}
+	#submit{display: inline-block;width: 60px;}
+	#name,#psword{
+		width: 200px;height: 20px;border:1px solid #ddd;margin-bottom: 15px;
+	}
+	.submit{
+		 width: 40px;height: 20px;background-color: blue;color: white;font-size: 12px;font-family: '宋体';text-align: center;line-height: 20px;border:0 solid blue;
+	}
+</style>
+</head>
+<body>
+<form action="/login" method="get">
+	<div class="div1">
+		<p>登录网易通行证</p>
+	</div>
+	<div class="div2">
+		<label for="name" class="usern">用户名：</label>
+		<input type="text" id="name">
+	</div>
+	<div class="div3">
+		<label for="psword" class="userp">密码：</label>
+		<input type="password" id="psword">
+	</div>
+	<div>
+		<label id="submit"></label>
+		<input type="button" value="登录" class="submit">
+	</div>
+</form>
+</body>
+</html>

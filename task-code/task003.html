@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>HTML单元作业3</title>
+ <style type="text/css">
+ *{margin: 0;padding: 0;letter-spacing: 1px;}
+    div{padding: 10px;font-size: 16px;}
+    label{margin: 0 15px 0 4px;}
+    #sig{resize:none;}
+    .submit{margin-left: 60px;background: #d853b7;color: #ffffff;padding: 5px 25px;font-size: 15px;}
+    .signame{vertical-align: top;}
+ </style>
+</head>
+<body>
+ <form class="form">
+ <div><label for="hphoto">头像</label>
+ <input type="file" value="选择文件" id="hphoto">
+ </div>
+ <div>
+ <label for="secname">昵称</label>
+ <input type="text" id="secname">
+ </div>
+ <div>
+ <label for="edu">学历</label>
+ <select id="edu">
+    <option>大专</option>
+    <option>本科</option>
+ </select>
+ </div>
+ <div><label>性别</label>
+ <input type="radio" name="sex" id="man" checked><label for="man">男</label>
+ <input type="radio" name="sex" id="woman"><label for="woman">女</label>
+ </div>
+ <div><label>爱好</label>
+ <input type="checkbox" name="fav" id="fav1" checked><label for="fav1">电影</label>
+ <input type="checkbox" name="fav" id="fav2"><label for="fav2">摄影</label>
+ <input type="checkbox" name="fav" id="fav3"><label for="fav3">音乐</label>
+ <input type="checkbox" name="fav" id="fav4" checked><label for="fav4">阅读</label>
+ </div>
+ <div>
+ <label for="sig" class="signame">签名</label>
+ <textarea id="sig" rows="3" cols="35" maxlegth="50"></textarea>
+ </div>
+ <div>
+ <input type="submit" value="保存" class="submit">
+ </div>
+ </form>
+</body>
+</html>
